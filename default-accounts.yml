@@ -1,0 +1,6 @@
+- accountId: 1bxnxTev14jMGab4QRXeafa7chTRHV7ZZ9e6GrKrrpXAHtM
+  alias: dolphin
+  threshold: 500
+- accountId: 1WMowFEogg7S1YEmigjJrP54mw2qUmsRLnesesnwP2c9XEx
+  alias: one of the validators
+  threshold: 4000

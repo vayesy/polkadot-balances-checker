@@ -1,0 +1,20 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: psql
+      POSTGRES_PASSWORD: psql
+      POSTGRES_DB: balances-checker
+  service:
+    image: balances-checker
+    container_name: balance-checker
+    build: ./
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_USER: psql
+      DB_PASSWORD: psql
+      DB_NAME: balances-checker
+      DEFAULT_NOTIFICATION_FREQUENCY: 30
